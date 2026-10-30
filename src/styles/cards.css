@@ -1,0 +1,45 @@
+.cards-section {
+  max-width: 100%;
+  padding: 1rem 2rem 3rem;
+}
+
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: color-mix(in srgb, var(--color-secondary) 80%, transparent);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  flex: 1 1 280px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid var(--color-text);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform:scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  height: 210px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex: 1;
+}

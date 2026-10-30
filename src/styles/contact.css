@@ -1,0 +1,81 @@
+.contact-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    background-color: color-mix(in srgb, var(--color-secondary) 80%, transparent);;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+input, select, textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1.5px solid var(--color-text);
+  border-radius: 8px;
+  background-color: var(--color-background);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid var(--color-primary-hover);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+fieldset {
+  border: 2px solid var(--color-primary-hover);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+legend {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.radio-group div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+
+@media (max-width: 600px) {
+  .radio-group {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+}
