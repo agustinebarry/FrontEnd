@@ -2,7 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles/styles.css'; 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Layout from './pages/Layout';
+import Layout from './components/Layout';
 import Home from './pages/Home';
 import Servicios from './pages/Servicios';
 import Destinos from './pages/Destino'; 
