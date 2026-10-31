@@ -14,7 +14,7 @@
     --color-text: #1F2937;
 }
 
-/* 1. Estructura base de altura completa y flexible para empujar el footer */
+/* Altura completa para empujar el footer */
 html, body {
     height: 100%;
 }
@@ -39,7 +39,6 @@ body{
     flex: 1;
 }
 
-/* 2. El main absorbe todo el espacio libre de la pantalla */
 main {
     flex: 1;
 }
