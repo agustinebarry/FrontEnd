@@ -8,19 +8,23 @@ import Servicios from './pages/Servicios';
 import Destinos from './pages/Destino'; 
 import Contacto from './pages/Contacto';
 
-// createBrowserRouter se encarga de armar las rutas
-const mapaRutas = createBrowserRouter([
+const mapaRutas = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Layout />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: 'servicios', element: <Servicios /> },
+        { path: 'destinos', element: <Destinos /> },
+        { path: 'contacto', element: <Contacto /> },
+      ],
+    },
+  ],
   {
-    path: '/',
-    element: <Layout />,
-    children: [
-      { index: true, element: <Home /> },
-      { path: 'servicios', element: <Servicios /> },
-      { path: 'destinos', element: <Destinos /> },
-      { path: 'contacto', element: <Contacto /> },
-    ],
-  },
-]);
+    basename: "/FrontEnd", // Github pages
+  }
+);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
